@@ -1,0 +1,331 @@
+* {
+    text-decoration: none !important;
+    list-style: none !important;
+    box-sizing: border-box;
+    font-family: "Roboto",sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cv-body {
+    background-color: #efefef;
+    overflow: hidden;
+}
+
+.border-box {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #aaa;
+    background-color: #fff;
+}
+
+.pc-layout {
+    max-width: 1240px;
+    width: 96%;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #efefef;
+}
+
+.rows {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.text-label {
+    color: #007bff !important;
+}
+
+.bd-rad {
+    border-radius: .5rem !important;
+}
+
+.bg-prim {
+    background-color: #007bff !important;
+}
+
+/* START CSS HEADER */
+.header {
+    margin: 120px 0;
+}
+
+.img-cv {
+    flex: 1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.img-cv .row-2 {
+    display: flex;
+}
+.img-cv img {
+    height: auto;
+    margin: 6px auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.img-cv p {
+    margin: auto;
+    font-size: 18px;
+}
+.img-cv p span {
+    font-size: 24px;
+}
+
+.info-cv {
+    flex: 2;
+    padding: 0 12px 12px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.info-cv .info-top {}
+.info-cv .info-top h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+.info-cv .info-top h5 {
+    color: #666;
+    font-size: 24px;
+}
+
+.info-cv .info-edu {
+    margin: 24px 0;
+}
+.info-cv .info-edu p {
+    font-size: 16px;
+    margin: 6px 0;
+}
+
+.info-cv .info-item {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 12px 0;
+    width: 100%;
+}
+.info-cv .info-item .personal-info-item {
+    width: 50%;
+    height: 28px;
+    padding: 10px 0;
+    display: flex;
+}
+.info-cv .info-item .personal-info-item label {
+    flex: 1;
+}
+.info-cv .info-item .personal-info-item span {
+    flex: 2;
+}
+
+
+/* END CSS HEADER */
+
+/* START SKILL */
+.skill {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    max-width: 1200px;
+    margin: 240px auto 120px;
+}
+
+.skill h1 {
+    margin: auto auto 40px;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.skill .skill-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto;
+}
+
+.skill-title {
+    width: 60%;
+    height: 60px;
+    position: absolute;
+    top: -30px;
+    left: 20%;
+    display: flex;
+}
+.skill-title h4 {
+    margin: auto;
+    color: #fff;
+}
+
+.skill .skill-left {
+    position: relative;
+    width: 48%;
+    background-color: #fff;
+    padding: 60px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.skill .skill-left .skill-item {}
+
+.skill .skill-right {
+    position: relative;
+    width: 48%;
+    display: flex;
+    background-color: #fff;
+    padding:  60px 24px 24px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* END SKILL */
+
+/* START EDUCATION */
+.education {
+    max-width: 1200px;
+    width: 96%;
+    box-sizing: border-box;
+    margin: 200px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+}
+.education h1 {
+    margin: auto auto 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.education .edu-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto;
+}
+
+.edu-table {
+    z-index: 1;
+    background-color: #fff;
+    width: 45%;
+    position: relative;
+    padding: 120px 60px 24px;
+}
+.edu-table .edu-title {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    box-shadow: none;
+    top: 30px;
+    left: -30px;
+}
+.edu-title::after {
+    content: "";
+    background-color: inherit;
+    border: 20px solid transparent;
+    position: absolute;
+    bottom: -13px;
+    left: 8px;
+    z-index: -1;
+    transform: rotate(30deg);
+    -webkit-filter: brightness(80%);
+    filter: brightness(80%);
+}
+.edu-table .edu-title h2 {
+    margin: auto;
+    font-size: 24px;
+    font-weight: 500;
+    color: #f5f5f5;
+}
+
+.edu-item {}
+.edu-item p {}
+.edu-table p i {padding-right: 20px;}
+i.fa-file-text::before {
+    content: \f15c;
+}
+i.fa-university::before {
+    content: \f19c;
+}
+
+/* END EDUCATION */
+
+/* START EXPERIENCE */
+/* END EXPERIENCE */
+
+/* START CONTACT */
+.contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200;
+    width: 96%;
+    margin: auto;
+}
+.contact .text-label {
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+.contact .contact-row {
+    margin-top: 120px;
+    width: 100%;
+    padding: 24px;
+    background-color: #fff;
+}
+.contact .contact-row .contact-item {
+    margin: auto;
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-flex;
+
+}
+
+.contact-icon {display: flex;}
+.contact-icon i {
+    font-size: 50px;
+    color: #007bff;
+    margin-right: 26px;
+}
+.contact-div {
+    flex: 1;
+    margin: au 12px;
+    box-sizing: border-box;
+    height: 60px;
+    display: flex;
+    position: relative;
+    background-color: #007bff;
+    border-radius: .5rem;
+}
+.contact-div p {
+    margin: auto 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #f5f5f5;
+}
+.contact-div-before {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -10px;
+    top: calc(50% - 10px);
+    transform: rotate(45deg);
+    background-color: #007bff;
+}
+/* END CONTACT */
+
+
+
+
+
+
