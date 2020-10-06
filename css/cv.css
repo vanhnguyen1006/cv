@@ -124,6 +124,14 @@
     flex: 2;
 }
 
+.orientation {
+    margin-top: 20px;
+    display: inline-block;
+}
+.orientation label {
+    text-align: center;
+}
+
 
 /* END CSS HEADER */
 
